@@ -1,0 +1,7 @@
+#story{
+  display: none;
+}
+
+.person1, .person2, .exclamation, .verb, .noun {
+  font-weight: bold;
+}
