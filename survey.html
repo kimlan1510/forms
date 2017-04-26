@@ -9,30 +9,64 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <form id="customer-info">
-          <label for="name">Your Name</label>
-          <input id="name" class="form-control" type="text">
+      <form id="customer_info">
+        <div class="row">
+            <label for="name"><h3>Your Name</h3></label>
+            <input id="name" class="form-control" type="text">
 
-          <label for="Phone Numbers">Phone Numbers</lable>
-          <input id="phone#" class="form-control" type="text">
-        </form>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <select class="form-control" id="favfood">
-            <option>Steak</option>
-            <option>Oyster</option>
-            <option>King Crab</option>
-            <option>Pancake</option>
-          </select>
-        </div>
-        <div class="col-md-6">
-          <p>hello</p>
+            <label for="phone_numbers"><h3>Phone Numbers</h3></lable>
+            <input id="phone_numbers" class="form-control" type="text">
+
+
+          <div class="form-group">
+            <label for="born"><h3>Date of birth:</h3></label>
+            <input id="born" class="form-control" type="date">
+          </div>
         </div>
 
-      </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>What is your favorite food?</h3>
+            <select class="form-control" id="favfood">
+              <option>Steak</option>
+              <option>Oyster</option>
+              <option>King Crab</option>
+              <option>Pancake</option>
+            </select>
+            <h3>What is your favorite color?</h3>
+            <div class="form-group">
+              <label for="color"></lable>
+              <input id="color" class="form-control" type="color">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3>What is your favorite car?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="car" value="2017 Honda Accord" checked>
+                Honda Accord
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="car" value="2017 Toyota Camry" checked>
+                Toyota Camry
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="car" value="2017 Ford Fusion" checked>
+                2017 Ford Fuson
+              </label>
+            </div>
+          </div>
 
+        </div>
+        <button type="submit" class="btn">Submit</button>
+        <div class="summary">
+          <p>Your name is <span class="name"></span>. Your phone number is <span class="phone-numbers"></span>. You like to eat <span class="food"></span>. You like to drive <span class="car"></span>. Your favorite color is <span class="color"></span>.</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
